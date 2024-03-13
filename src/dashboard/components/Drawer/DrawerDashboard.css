@@ -1,0 +1,17 @@
+.DrawerNavLink {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.5s ease;
+}
+
+.DrawerNavLink:hover {
+    cursor: pointer;
+    color: ----primary-color;
+}
+
+.DrawerNavLink_active {
+    text-decoration: none;
+    color: ----primary-color !important;
+    font-weight: bold !important;
+    transition: transform 0.5s ease;
+}

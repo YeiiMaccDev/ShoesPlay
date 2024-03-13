@@ -1,0 +1,129 @@
+/*---------------Variables---------------*/
+:root {
+  --bg-color: #fff;
+  --bg-color-input: #ebebeb;
+  /* --primary-color: #ffbf00; */
+  --primary-color: #51d1f6;
+  --primary-color-light: #ffcc33;
+  --secondary-color: #00C9C8;
+  --input-placeholder: #d4d4d4;
+  --input-bg: #efefef;
+  --texto-destaque: #ffff;
+  --azul-destaque: #00C9C8;
+  --bg-contato: #eaf2fd;
+}
+
+/*---------------Normaliza - Reset-CSS---------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Releway", sans-serif;
+}
+
+
+/*--------------- Height sections ---------------*/
+.section-100vh,
+.section-50vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* padding: var(--height-menu) 0; */
+}
+
+.section-100vh {
+  min-height: calc(100vh - 75px);
+  /* min-height: 100vh; */
+  height: auto;
+}
+
+.section-50vh {
+  min-height: calc(50vh - 75px);
+  /* min-height: 50vh; */
+  height: auto;
+}
+
+
+@media screen and (min-height: 800px) and (max-width: 1100px) {
+  .section-100vh {
+    padding: 50px 0;
+    min-height: auto;
+  }
+}
+
+
+/*--------------- container margin width---------------*/
+.widthContainer {
+  width: 90%;
+  max-width: 1200px;
+
+  z-index: 1000;
+}
+
+
+
+
+
+
+/* Modal */
+.ReactModalPortal>div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity .2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 500px;
+  outline: none;
+  padding: 10px;
+}
+
+/* FABS */
+.fab {
+  border-radius: 100%;
+  bottom: 25px;
+  font-size: 30px;
+  padding: 25px;
+  position: fixed;
+  right: 25px;
+}
+
+.fab-danger {
+  border-radius: 100%;
+  bottom: 25px;
+  font-size: 22px;
+  position: fixed;
+  left: 25px;
+  width: 70px;
+  height: 70px;
+}
